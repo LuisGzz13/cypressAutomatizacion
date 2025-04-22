@@ -1,0 +1,12 @@
+{
+  "cats": [
+    {
+      "name": "Whiskers",
+      "home": "Apartment"
+    },
+    {
+      "name": "Mittens",
+      "home": "House"
+    }
+  ]
+} 

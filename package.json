@@ -1,0 +1,17 @@
+{
+  "name": "qa-cypress-main",
+  "version": "1.0.0",
+  "description": "Basic project for cypress init",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^14.3.1"
+  }
+}

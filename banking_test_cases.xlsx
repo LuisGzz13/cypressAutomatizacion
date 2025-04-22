@@ -1,0 +1,28 @@
+Test Case ID,Test Case Description,Preconditions,Test Steps,Expected Results,Actual Results,Status
+TC001,Manager login and create customer,Application is running and accessible,1. Open the application
+2. Enter manager credentials
+3. Click on "Create Customer" button
+4. Fill in customer details (name, email, phone)
+5. Submit the form,Customer is created successfully and visible in the system,,
+TC002,Manager creates USD account for customer,TC001 has been completed successfully,1. Login as manager
+2. Select the created customer
+3. Click on "Create Account" button
+4. Select "USD" as account type
+5. Submit the form,USD account is created for the customer,,
+TC003,Customer deposits $800 and verifies balance,TC002 has been completed successfully,1. Login as customer
+2. Click on "Deposit" button
+3. Enter amount: $800
+4. Submit the transaction,1. Transaction is successful
+2. Balance shows $800.00,,
+TC004,Customer attempts to withdraw $1,500,TC003 has been completed successfully,1. Login as customer
+2. Click on "Withdraw" button
+3. Enter amount: $1,500
+4. Submit the transaction,"Transaction Failed" message is displayed,,
+TC005,Customer withdraws $500,TC003 has been completed successfully,1. Login as customer
+2. Click on "Withdraw" button
+3. Enter amount: $500
+4. Submit the transaction,"Transaction successful" message is displayed,,
+TC006,Customer views transaction history,TC003 and TC005 have been completed successfully,1. Login as customer
+2. Click on "Transactions" button,Transaction list shows:
+- Deposit: $800.00
+- Withdrawal: $500.00,, 
